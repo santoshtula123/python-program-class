@@ -108,3 +108,23 @@ else:
 
 #wap for providing salary and year of service and calculate the bonus amount.
 
+salary = int(input("Enter your salary: "))
+year_of_service = int(input("Enter your year of service: "))
+if year_of_service < 5:
+    bonus = salary * 0.05
+    print(f"Your bonus is: {bonus}")
+elif year_of_service >= 5 and year_of_service < 10:
+    bonus = salary * 0.10
+    print(f"Your bonus is: {bonus}")
+elif year_of_service >= 10 and year_of_service < 15:
+    bonus = salary * 0.15
+    print(f"Your bonus is: {bonus}")
+elif year_of_service >= 15 and year_of_service < 20:
+    bonus = salary * 0.20
+    print(f"Your bonus is: {bonus}")
+elif year_of_service >= 20:
+    bonus = salary * 0.25
+    print(f"Your bonus is: {bonus}")
+else:
+    print("Invalid input")
+
